@@ -17,6 +17,7 @@
             background-color: #f7fafc;
             border-radius: 8px;
             margin: 2rem 0;
+            display: none;
         }
         .viewer-container {
             max-width: 800px;
@@ -28,6 +29,7 @@
             gap: 1rem;
             margin-top: 1rem;
             justify-content: center;
+            display: none;
         }
         button {
             background: #3B82F6;
@@ -41,6 +43,20 @@
         button:hover {
             background: #2563EB;
         }
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            background: #f7fafc;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        .loading h2 {
+            color: #3B82F6;
+            margin-bottom: 1rem;
+        }
+        .loading p {
+            color: #4a5568;
+        }
     </style>
 </head>
 <body>
@@ -50,7 +66,14 @@
         
         <em>Experience the most thicc shark in the seven seas in glorious 3D!</em>
 
+        <div class="loading">
+            <h2>3D Model Coming Soon!</h2>
+            <p>Our talented sharks are working hard to bring you an amazing 3D experience.</p>
+            <p>Check back in a few moments to see the Sharkbutt Token logo in all its 3D glory!</p>
+        </div>
+
         <model-viewer
+            id="sharkModel"
             src="assets/models/sharkbutt.glb"
             camera-controls
             auto-rotate
@@ -61,7 +84,7 @@
             alt="Sharkbutt Token 3D Logo">
         </model-viewer>
 
-        <div class="controls">
+        <div class="controls" id="modelControls">
             <button onclick="document.querySelector('model-viewer').autoRotate = !document.querySelector('model-viewer').autoRotate">
                 Toggle Rotation
             </button>
@@ -74,5 +97,24 @@
             <a href="index.html">← Back to Article</a>
         </p>
     </div>
+
+    <script>
+        // Check if the model loads successfully
+        const modelViewer = document.getElementById('sharkModel');
+        const controls = document.getElementById('modelControls');
+        const loading = document.querySelector('.loading');
+
+        modelViewer.addEventListener('load', () => {
+            modelViewer.style.display = 'block';
+            controls.style.display = 'flex';
+            loading.style.display = 'none';
+        });
+
+        modelViewer.addEventListener('error', () => {
+            modelViewer.style.display = 'none';
+            controls.style.display = 'none';
+            loading.style.display = 'block';
+        });
+    </script>
 </body>
 </html> 
