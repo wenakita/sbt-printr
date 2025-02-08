@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="none"/>
+  
+  <!-- Seaweed -->
+  <path d="M100,500 Q120,450 100,400 Q80,350 100,300" stroke="#00FF00" stroke-width="10" fill="none"/>
+  <path d="M150,500 Q170,440 150,380 Q130,320 150,260" stroke="#00FF00" stroke-width="10" fill="none"/>
+  
+  <!-- Shark body -->
+  <path d="M400,300 C500,300 600,250 700,300 L650,400 C550,450 450,450 350,400 L300,300 C350,250 300,300 400,300 Z" fill="#4AA"/>
+  
+  <!-- Shark fin -->
+  <path d="M500,250 L600,150 L550,250 Z" fill="#4AA"/>
+  
+  <!-- Shark tail -->
+  <path d="M650,300 L750,200 L750,400 Z" fill="#4AA"/>
+  
+  <!-- Shark face -->
+  <ellipse cx="320" cy="300" rx="50" ry="40" fill="#FFF"/>
+  <circle cx="310" cy="290" r="15" fill="#000"/>
+  <path d="M280,320 Q320,350 360,320" fill="none" stroke="#F00" stroke-width="5"/>
+  
+  <!-- Small fish -->
+  <path d="M100,350 L130,330 L130,370 Z" fill="#F60"/>
+  <path d="M150,400 L180,380 L180,420 Z" fill="#F60"/>
+  <path d="M120,450 L150,430 L150,470 Z" fill="#F60"/>
+</svg>

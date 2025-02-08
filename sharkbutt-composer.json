@@ -1,0 +1,161 @@
+{
+  "projectName": "Sharkbutt",
+  "ticker": "$SBT",
+  "slogan": "The Juiciest Token in the Ocean!",
+  "description": "Dive into the most memeable token in DeFi! Sharkbutt ($SBT) combines the power of Printr's omnichain infrastructure with the most thicc shark in the seven seas. Featuring chain-agnostic bonding curves, seamless cross-chain swaps via Squid Router, and Axelar-powered interchain capabilities.",
+  
+  "marketAnalysis": {
+    "preSaleHypeComparison": {
+      "referenceToken": "$BRETT",
+      "competitiveAdvantages": [
+        "Multi-chain presence from day one",
+        "Advanced liquidity distribution mechanism",
+        "Built-in social features and reputation system",
+        "Innovative holder incentives"
+      ],
+      "targetMetrics": {
+        "initialMarketCap": "150000 USD",
+        "24hTarget": "500000 USD",
+        "7dTarget": "2000000 USD"
+      }
+    }
+  },
+
+  "bondingCurveConfig": {
+    "model": "balanced",
+    "parameters": {
+      "initialPrice": "0.000005 ETH",
+      "curveStepness": 1.75,
+      "liquidityThresholds": [
+        {"milestone": "35000 USD", "distribution": "20%"},
+        {"milestone": "75000 USD", "distribution": "35%"},
+        {"milestone": "150000 USD", "distribution": "50%"},
+        {"milestone": "300000 USD", "distribution": "75%"},
+        {"milestone": "750000 USD", "distribution": "100%"}
+      ]
+    }
+  },
+
+  "tokenomics": {
+    "initialSupply": "1000000000",
+    "distribution": {
+      "publicSale": "70%",
+      "liquidity": "20%",
+      "marketing": "5%",
+      "development": "5%"
+    },
+    "vesting": {
+      "team": "6 months linear",
+      "marketing": "3 months linear"
+    }
+  },
+
+  "protectionMechanics": {
+    "maxBuyLimit": {
+      "percentage": "1%",
+      "duration": "24h"
+    },
+    "sellTax": {
+      "initial": "10%",
+      "decay": {
+        "rate": "1% daily",
+        "floor": "1%"
+      }
+    },
+    "antiBot": {
+      "tradeCooldown": "30s",
+      "minimumHoldTime": "1h"
+    }
+  },
+
+  "holderIncentives": {
+    "staking": {
+      "initialRate": "2% daily",
+      "duration": "7 days",
+      "requirements": "Minimum 100000 tokens"
+    },
+    "feeRedistribution": {
+      "percentage": "25%",
+      "eligibility": "Staked tokens only"
+    },
+    "timelock": {
+      "multipliers": [
+        {"duration": "7d", "bonus": "1.5x"},
+        {"duration": "30d", "bonus": "2x"},
+        {"duration": "90d", "bonus": "3x"}
+      ]
+    },
+    "earlyHolder": {
+      "nftReward": {
+        "name": "Diamond Fins",
+        "supply": 100,
+        "benefits": ["Increased staking rewards", "Exclusive pool access"]
+      }
+    }
+  },
+
+  "visibilityFeatures": {
+    "kingOfHill": {
+      "entryFee": "0.1 ETH",
+      "rewards": ["Featured listing", "Social media promotion"]
+    },
+    "boost": {
+      "options": [
+        {"duration": "1h", "cost": "0.05 ETH"},
+        {"duration": "4h", "cost": "0.15 ETH"},
+        {"duration": "24h", "cost": "0.5 ETH"}
+      ]
+    },
+    "socialIntegration": {
+      "platforms": ["Twitter", "Telegram", "Discord"],
+      "rewards": {
+        "bonus": "5%",
+        "requirements": "Active account verification"
+      }
+    }
+  },
+
+  "chainDeployment": {
+    "primary": "Ethereum",
+    "secondary": [
+      "Base",
+      "Arbitrum",
+      "Optimism",
+      "Polygon"
+    ],
+    "bridging": {
+      "provider": "Axelar",
+      "features": [
+        "Native token qualities preservation",
+        "Unified liquidity pools",
+        "Cross-chain governance"
+      ]
+    }
+  },
+
+  "tradingIntegration": {
+    "dexAggregator": "Squid Router",
+    "features": [
+      "Best price execution",
+      "Cross-chain swaps",
+      "Gas optimization",
+      "Slippage protection"
+    ]
+  },
+
+  "reputationSystem": {
+    "metrics": [
+      "Holder duration",
+      "Trading volume",
+      "Community engagement",
+      "Cross-chain activity"
+    ],
+    "benefits": {
+      "highScore": [
+        "Reduced fees",
+        "Higher staking rewards",
+        "Exclusive pool access"
+      ]
+    }
+  }
+}
