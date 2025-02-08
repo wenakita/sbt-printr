@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharkbutt Token ($SBT) - 3D Logo</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+        model-viewer {
+            width: 100%;
+            height: 400px;
+            background-color: #f7fafc;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        .viewer-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .controls {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            justify-content: center;
+        }
+        button {
+            background: #3B82F6;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+        }
+        button:hover {
+            background: #2563EB;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="assets/images/logo.svg" alt="Sharkbutt Token Logo" class="logo">
+        <h1>Sharkbutt Token 3D Logo</h1>
+        
+        <em>Experience the most thicc shark in the seven seas in glorious 3D!</em>
+
+        <model-viewer
+            src="assets/models/sharkbutt.glb"
+            camera-controls
+            auto-rotate
+            rotation-per-second="30deg"
+            shadow-intensity="1"
+            environment-image="neutral"
+            exposure="1"
+            alt="Sharkbutt Token 3D Logo">
+        </model-viewer>
+
+        <div class="controls">
+            <button onclick="document.querySelector('model-viewer').autoRotate = !document.querySelector('model-viewer').autoRotate">
+                Toggle Rotation
+            </button>
+            <button onclick="document.querySelector('model-viewer').cameraOrbit = '0deg 75deg 105%'">
+                Reset View
+            </button>
+        </div>
+
+        <p class="meta">
+            <a href="index.html">← Back to Article</a>
+        </p>
+    </div>
+</body>
+</html> 
